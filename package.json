@@ -1,0 +1,12 @@
+{
+  "name": "jakearchibalddemos",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "0.1.5",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
