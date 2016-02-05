@@ -1,7 +1,8 @@
 {
   "name": "jakearchibalddemos",
   "scripts": {
-    "start": "node index.js"
+    "serve": "node index.js",
+    "deploy": "git push heroku"
   },
   "version": "0.1.5",
   "private": true,
