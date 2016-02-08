@@ -9,5 +9,11 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "5.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.8"
   }
 }
