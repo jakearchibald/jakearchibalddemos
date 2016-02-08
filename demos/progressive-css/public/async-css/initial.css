@@ -16,6 +16,7 @@ html {
   line-height: 1.7;
   font-size: 14px;
   background: #E9E9E9;
+  height: 100%;
 }
 
 @media (min-width: 470px) {
@@ -26,6 +27,9 @@ html {
 
 body {
   margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
 /* header */
@@ -76,11 +80,14 @@ body {
 /* main-n-about */
 
 .main-n-about {
+  width: 100%;
+  box-sizing: border-box;
   max-width: 580px;
   margin: -14px auto;
   background: #fff;
   padding: 0 12px;
   position: relative;
+  flex: 1;
 }
 
 .main-n-about::after {
