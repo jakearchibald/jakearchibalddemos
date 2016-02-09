@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>My blog</title>
+  <link rel="stylesheet" href="/progressive-css/async-css/0/initial.css">
+  <script>
+    // https://github.com/filamentgroup/loadCSS
+    !function(e){"use strict"
+    var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+    return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+    setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+    "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+  </script>
+  <script>
+    [
+      'main-content.css',
+      'about-me.css',
+      'footer.css'
+    ].map(url => loadCSS(`/progressive-css/async-css/0/5/${url}`))
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title">A load of bollocks…</div>
+    </div>
+  </header>
+  <div class="main-n-about">
+    <main>
+      <h1>
+        Lorem ipsum dolor sit amet
+      </h1>
+      <p>
+        Consectetur adipiscing elit. Proin a facilisis mauris, vitae malesuada ligula. Cras congue commodo hendrerit. In iaculis sem vel sem facilisis, non aliquet lectus vestibulum. Donec dignissim scelerisque nisi non ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed pulvinar leo vel erat pharetra, vitae molestie leo ultricies. Sed cursus, sapien sed efficitur consectetur, neque orci aliquam turpis, nec consectetur erat nisl at ipsum. Fusce vehicula justo eget erat vestibulum, a aliquam lorem tristique. Aliquam congue ac justo porta congue. Vestibulum consectetur ante in lectus consequat, quis tempus massa vulputate. In aliquam nisi purus, ut lobortis erat vehicula a. Maecenas aliquet elementum risus quis facilisis. Aenean eros erat, vehicula vitae vulputate vitae, feugiat ac nunc. Nulla dui diam, egestas id placerat non, porttitor quis arcu.
+      </p>
+      <h2>
+        Vivamus sollicitudin est eu
+      </h2>
+      <p>
+        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sit amet condimentum metus. Aenean nisi nulla, venenatis eget consequat quis, pharetra sit amet ipsum. Integer blandit congue risus, at eleifend nunc pharetra in. Etiam at vestibulum lectus. Morbi consectetur turpis a leo malesuada, at tristique purus interdum. Duis turpis augue, dictum et elit eu, faucibus lacinia metus. In libero arcu, fermentum vitae turpis sit amet, lacinia dictum mauris. Etiam pellentesque tempor felis, in molestie ex ullamcorper et. Fusce sit amet pharetra nisi. In rutrum a nisi eget auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas aliquet risus turpis, id rhoncus nunc porttitor in. Praesent in nulla ac ante auctor interdum.
+      </p>
+      <p>
+        Morbi molestie neque nunc, ut sagittis sapien consectetur eu. Vivamus sollicitudin est eu tortor sollicitudin, vel fermentum leo porta. Sed ut mattis lorem. Ut eget fringilla lorem. Phasellus orci magna, mattis eu tempus ac, imperdiet nec purus. Cras ullamcorper ex sed diam fermentum, in molestie ante luctus. Quisque imperdiet eros vitae eros suscipit laoreet at vel mauris. Aenean in imperdiet urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sagittis, dui sed tempor euismod, tortor dui vulputate magna, sed venenatis est justo at justo.
+      </p>
+      <h2>
+        Vestibulum tincidunt
+      </h2>
+      <p>
+        Suspendisse et interdum sem. Vestibulum tincidunt lacinia aliquet. In hac habitasse platea dictumst. Integer id facilisis justo, a mollis neque. Proin vitae leo ullamcorper, laoreet magna sed, posuere metus. Donec vel cursus sem. Aliquam suscipit purus nec mauris iaculis mattis. Quisque finibus dapibus metus id dignissim. Donec suscipit, libero vitae convallis vestibulum, nisl elit ullamcorper enim, ac dictum orci quam sed velit. In consectetur aliquam magna, eget vulputate lorem pellentesque eleifend. Nam vestibulum enim id purus aliquam dapibus. Mauris euismod nunc at felis scelerisque sollicitudin.
+      </p>
+    </main>
+    <section class="about-me">
+      <h1>In venenatis nibh lectus</h1>
+      <p>In congue ante vel risus finibus, a feugiat ante pellentesque. Morbi vestibulum ultrices purus et auctor. Fusce auctor erat non accumsan porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae maximus eros, ac ullamcorper ligula. In venenatis nibh lectus, at accumsan tellus dictum sit amet.</p>
+    </section>
+  </div>
+  <footer>
+    <ul>
+      <li>Morbi</li>
+      <li>vestibulum</li>
+      <li>ultrices</li>
+      <li>purus</li>
+      <li>et</li>
+      <li>auctor</li>
+    </ul>
+  </footer>
+</body>
+</html>
