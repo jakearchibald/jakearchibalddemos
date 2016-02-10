@@ -1,10 +1,4 @@
 /* global */
-
-:root {
-  --main-pending: none;
-  --about-me-pending: none;
-}
-
 main,
 .about-me,
 footer {
@@ -104,16 +98,17 @@ body {
 
 @media (min-width: 850px) {
   .main-n-about {
-    display: grid;
-    grid-template-columns: 1fr 42px 31%;
+    display: flex;
     max-width: 1050px;
     align-items: flex-start;
   }
   main {
-    grid-column: 1 / 2;
+    margin-right: 42px;
+    max-width: calc(69% - 42px);
   }
   .about-me {
     margin-top: -28px;
-    grid-column: 3 / 4;
+    max-width: 31%;
+    box-sizing: border-box;
   }
 }

@@ -1,0 +1,27 @@
+footer {
+  background: #2d2d2d;
+  padding: 0.9em 12px;
+  padding-top: calc(0.9em + 14px);
+  overflow: hidden;
+  color: #fff;
+  font-size: 0.9rem;
+  display: block;
+}
+
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer li {
+  display: block;
+  padding: 0 1em;
+  border-left: 1px solid #fff;
+}
+
+footer li:first-child {
+  border-left: none;
+}
