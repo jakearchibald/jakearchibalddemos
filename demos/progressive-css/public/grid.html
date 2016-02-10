@@ -3,21 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <title>My blog</title>
-  <link rel="stylesheet" href="/progressive-css/async-css/initial.css">
-  <script>
-    // https://github.com/filamentgroup/loadCSS
-    !function(e){"use strict"
-    var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
-    return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
-    setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
-    "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
-  </script>
+  <link rel="stylesheet" href="/progressive-css/grid-css/initial.css">
   <script>
     [
       'main-content.css',
       'about-me.css',
       'footer.css'
-    ].map(url => loadCSS(`/progressive-css/0/10/async-css/${url}`))
+    ].map((url, i) => {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = `/progressive-css/0/10/grid-css/${url}`;
+      document.head.appendChild(link);
+    })
   </script>
 </head>
 <body>
