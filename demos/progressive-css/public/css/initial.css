@@ -1,10 +1,9 @@
-/* global */
-
 html {
   font-family: sans-serif;
   line-height: 1.7;
   font-size: 14px;
   background: #E9E9E9;
+  height: 100%;
 }
 
 @media (min-width: 470px) {
@@ -15,9 +14,10 @@ html {
 
 body {
   margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
 }
-
-/* header */
 
 .site-header {
   background: #2D2D2D;
@@ -30,6 +30,7 @@ body {
   flex-flow: column;
   justify-content: flex-end;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .site-title {
@@ -46,7 +47,7 @@ body {
 
 @media (min-width: 604px) {
   .site-header-inner {
-    max-width: 580px;
+    max-width: 604px;
     padding: 0 34px;
   }
   .site-title {
@@ -62,14 +63,15 @@ body {
   }
 }
 
-/* main-n-about */
-
 .main-n-about {
-  max-width: 580px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 604px;
   margin: -14px auto;
   background: #fff;
   padding: 0 12px;
   position: relative;
+  flex: 1;
 }
 
 .main-n-about::after {
@@ -91,11 +93,11 @@ body {
   }
   main {
     margin-right: 42px;
-    min-width: calc(69% - 42px);
+    max-width: calc(69% - 42px);
   }
   .about-me {
     margin-top: -28px;
-    min-width: 31%;
+    max-width: 31%;
     box-sizing: border-box;
   }
 }
