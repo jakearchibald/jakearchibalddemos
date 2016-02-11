@@ -3,9 +3,11 @@
 :root {
   --main-pending: none;
   --about-me-pending: none;
+  --comments-pending: none;
 }
 
 main,
+.comments,
 .about-me,
 footer {
   display: none;

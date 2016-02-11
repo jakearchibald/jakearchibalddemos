@@ -1,5 +1,5 @@
 :root {
-  --about-me-pending: initial;
+  --about-me-pending: var(--comments-pending, initial);
 }
 
 .about-me {
@@ -9,7 +9,7 @@
   overflow: hidden;
   background: #C9DCEC;
   font-size: 0.9rem;
-  display: var(--main-pending, block);
+  display: var(--comments-pending, block);
 }
 
 .about-me h1 {
@@ -36,6 +36,9 @@
 }
 
 @media (min-width: 850px) {
+  :root {
+    --about-me-pending: initial;
+  }
   .about-me {
     margin-left: auto;
     margin-right: 0;
