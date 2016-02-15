@@ -1,9 +1,9 @@
 :root {
-  --main-pending: initial;
+  --main-blocker: initial;
 }
 
 main {
-  display: block;
+  display: var(--main-blocker, block);
 }
 
 main::before {

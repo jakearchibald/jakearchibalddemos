@@ -5,7 +5,7 @@ footer {
   overflow: hidden;
   color: #fff;
   font-size: 0.9rem;
-  display: var(--about-me-pending, var(--comments-pending, block));
+  display: var(--about-me-blocker, var(--comments-blocker, block));
 }
 
 footer ul {

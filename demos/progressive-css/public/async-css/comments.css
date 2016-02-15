@@ -1,10 +1,10 @@
 :root {
-  --comments-pending: var(--main-pending);
+  --comments-blocker: var(--main-blocker);
 }
 
 .comments {
   margin-bottom: 2em;
-  display: var(--main-pending, block);
+  display: var(--comments-blocker, block);
 }
 
 .comments h1:first-child {

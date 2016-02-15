@@ -1,9 +1,10 @@
 /* global */
 
 :root {
-  --main-pending: none;
-  --about-me-pending: none;
-  --comments-pending: none;
+  --main-blocker: none;
+  --comments-blocker: none;
+  --about-me-blocker: none;
+  --footer-blocker: none;
 }
 
 main,
