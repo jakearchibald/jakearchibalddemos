@@ -1,5 +1,5 @@
 :root {
-  --comments-pending: var(--main-pending, initial);
+  --comments-pending: var(--main-pending);
 }
 
 .comments {
