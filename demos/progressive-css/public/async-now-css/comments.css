@@ -1,0 +1,41 @@
+.main-content-loaded .comments {
+  display: block;
+}
+
+.comments {
+  margin-bottom: 2em;
+}
+
+.comments h1:first-child {
+  margin-top: 0;
+  font-size: 1.7rem;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: 604px) {
+  .comments h1:first-child {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.comments header {
+  display: flex;
+  align-items: center;
+  color: #969696;
+  margin: 1.9em 0 0;
+  margin-left: -12px;
+}
+
+.comments .avatar {
+  width: 40px;
+  height: 40px;
+  fill: #969696;
+  margin-right: 0.6em;
+}
+
+.comments article article {
+  border-left: 10px solid #E4E4E4;
+  padding-left: 22px;
+}
