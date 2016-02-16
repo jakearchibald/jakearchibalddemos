@@ -19,10 +19,12 @@
       'comments',
       'about-me',
       'footer'
-    ].map(name => {
+    ].map(function(name) {
       onloadCSS(
-        loadCSS(`/progressive-css/0/5/async-now-css/${name}.css`),
-        () => document.documentElement.classList.add(`${name}-loaded`)
+        loadCSS('/progressive-css/0/5/async-now-css/' + name + '.css'),
+        function() {
+          document.documentElement.classList.add(name + '-loaded');
+        }
       );
     })
   </script>
