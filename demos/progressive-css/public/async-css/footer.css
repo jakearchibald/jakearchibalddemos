@@ -1,3 +1,7 @@
+:root {
+  --footer-blocker: var(--about-me-blocker, var(--comments-blocker));
+}
+
 footer {
   background: #2d2d2d;
   padding: 0.9em 12px;
@@ -5,7 +9,7 @@ footer {
   overflow: hidden;
   color: #fff;
   font-size: 0.9rem;
-  display: var(--about-me-blocker, var(--comments-blocker, block));
+  display: var(--footer-blocker, block);
 }
 
 footer ul {
